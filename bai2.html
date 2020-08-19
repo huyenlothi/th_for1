@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("nhap so can tinh giai thua"));
+    let factorial = 1
+    for (let i=1; i<=num;i++) {
+        if (num==0) {
+            alert(num+"! = " + factorial)
+        }else if (num<0) {
+            alert("moi ban nhap lai so duong");
+            num = parseInt(prompt("nhap so can tinh giai thua"));
+        }else {
+            factorial*=i;
+        }
+    }
+    document.write(num+ "! = " + factorial);
+</script>
+</body>
+</html>

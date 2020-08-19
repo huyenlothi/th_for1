@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let n1=0;
+    let n2=1;
+    let text = "0, 1, ";
+    let temp;
+    let yournumber = parseInt(prompt("nhap so cac so ban can in"));
+    for (let i=2;i<yournumber ; i++) {
+        text+=n1+n2;
+        if (i!=(yournumber-1)) {
+            text+=", ";
+        } else text+=". ";
+        temp=n1;
+        n1=n2;
+        n2=temp+n1;
+    }
+    document.write(text);
+</script>
+</body>
+</html>
